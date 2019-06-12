@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+    <persistence-unit name="NewPersistenceUnit">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>edu.umss.testEntity.Caracteristica</class>
+        <class>edu.umss.testEntity.Categoria</class>
+        <class>edu.umss.testEntity.Ciudad</class>
+        <class>edu.umss.testEntity.Detalle</class>
+        <class>edu.umss.testEntity.Empresa</class>
+        <class>edu.umss.testEntity.Imagen</class>
+        <class>edu.umss.testEntity.Pais</class>
+        <class>edu.umss.testEntity.Persona</class>
+        <class>edu.umss.testEntity.Producto</class>
+        <class>edu.umss.testEntity.Proveedor</class>
+        <class>edu.umss.testEntity.RegistroIngreso</class>
+        <class>edu.umss.testEntity.Rol</class>
+        <class>edu.umss.testEntity.TarjetaCredito</class>
+        <class>edu.umss.testEntity.Usuario</class>
+        <class>edu.umss.testEntity.Venta</class>
+        <class>edu.umss.testEntity.Migrations</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/EasyShoppingDB"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.username" value=""/>
+            <property name="hibernate.connection.password" value=""/>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
